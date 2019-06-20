@@ -6,7 +6,7 @@
 
     <groupId>ml.dmlc</groupId>
     <artifactId>xgboost-jvm_2.12</artifactId>
-    <version>0.90</version>
+    <version>0.90-tres2</version>
     <packaging>pom</packaging>
     <name>XGBoost JVM Package</name>
     <description>JVM Package for XGBoost</description>
@@ -206,10 +206,11 @@
         </profile>
     </profiles>
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <repository>
+            <id>oss-libs-release-local</id>
+            <name>oss-libs-release-local</name>
+            <url>http://server02.tresata.com:8081/artifactory/oss-libs-release-local</url>
+        </repository>
     </distributionManagement>
     <build>
         <resources>
